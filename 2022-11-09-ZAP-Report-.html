@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2022-11-09-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2022-11-09-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2022-11-09-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2022-11-09-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Wed 9 Nov 2022, at 18:39:25</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://portocarrero-store.herokuapp.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://portocarrero-store.herokuapp.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(12)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cross-Domain Misconfiguration</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Cookie Without Secure Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>48</span><br> <span
+								class="additional-info-percentages">(400.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>12</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: &quot;Content-Security-Policy&quot; for Chrome 25+, Firefox 23+ and Safari 7+, &quot;X-Content-Security-Policy&quot; for Firefox 4.0+ and Internet Explorer 10+, and &quot;X-WebKit-CSP&quot; for Chrome 14+ and Safari 6+.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cross-Domain Misconfiguration</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Access-Control-Allow-Origin: *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p>
+
+<p>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (245 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/robots.txt HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (484 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Set-Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38; Path=/; HttpOnly
+Date: Wed, 09 Nov 2022 23:33:58 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Cookie Without Secure Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (235 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (484 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Set-Cookie: connect.sid=s%3AJoBHFPsiSmZlXMmuiMYGqBoPbh9o5vPR.XpGXPanh7J6P6R%2B9IK5Db7jAYpmBhdgTYqMY0a5o2qM; Path=/; HttpOnly
+Date: Wed, 09 Nov 2022 23:33:58 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>connect.sid</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: connect.sid</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (245 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/robots.txt HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (484 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Set-Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38; Path=/; HttpOnly
+Date: Wed, 09 Nov 2022 23:33:58 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>connect.sid</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: connect.sid</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: Express</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/assets</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (378 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/assets HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: https://portocarrero-store.herokuapp.com/sitemap.xml
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:34:40 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://portocarrero-store.herokuapp.com</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/static/js/main.e7fbac87.chunk.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bADMIN\b and was detected in the element starting with: &quot;(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[0],{148:function(e,a,t){e.exports=t(179)},179:function(e,a,t){&quot;use &quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (434 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/static/js/main.e7fbac87.chunk.js HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: https://portocarrero-store.herokuapp.com/sitemap.xml
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (373 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;a7e9-175dbd98c88&quot;
+Content-Type: application/javascript; charset=UTF-8
+Content-Length: 42985
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (42985 bytes)</summary>
+				
+				<pre><code>(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[0],{148:function(e,a,t){e.exports=t(179)},179:function(e,a,t){&quot;use strict&quot;;t.r(a);var n=t(0),r=t.n(n),c=t(11),o=t.n(c),i=t(43),l=t(14),s=t(241),m=t(6),u=t(232),p=t(229),d=t(221),g=t(227),f=t(222),E=t(59),b=t(218),h=t(247),v=t(24),x=t(12),j=t.n(x),y=t(19),O=t(23),N=t.n(O),w=t(248),C=t(225),S=t(251),k=t(228);function I(e){var a=W(),t=e.handleCloseSignUp,c=e.handleOpenSignIn,o=e.handleMessageSuccess,i=e.handleMessageUnsuccess,l=Object(n.useState)(&quot;&quot;),s=Object(m.a)(l,2),u=s[0],p=s[1],h=Object(n.useState)(&quot;&quot;),v=Object(m.a)(h,2),x=v[0],O=v[1],I=Object(n.useState)(&quot;&quot;),F=Object(m.a)(I,2),M=F[0],D=F[1],P=Object(n.useState)(&quot;&quot;),T=Object(m.a)(P,2),R=T[0],z=T[1],A=function(){var e=Object(y.a)(j.a.mark((function e(a){return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(a.preventDefault(),&quot;&quot;!==u&amp;&amp;&quot;&quot;!==x&amp;&amp;&quot;&quot;!==M&amp;&amp;&quot;&quot;!==R){e.next=5;break}i(),e.next=9;break;case 5:return e.next=7,N.a.post(&quot;/api/users&quot;,{Name:u,LastName:x,Email:M,Password:R});case 7:B(),o();case 9:case&quot;end&quot;:return e.stop()}}),e)})));return function(a){return e.apply(this,arguments)}}(),B=function(){t(),c()};return r.a.createElement(b.a,{component:&quot;main&quot;,maxWidth:&quot;xs&quot;},r.a.createElement(&quot;div&quot;,{className:a.paper},r.a.createElement(d.a,{to:&quot;/&quot;},r.a.createElement(&quot;img&quot;,{src:&quot;/assets/logo_small_icon_only.png&quot;,alt:&quot;logo&quot;,className:a.logo})),r.a.createElement(E.a,{component:&quot;h1&quot;,variant:&quot;h5&quot;},&quot;Reg\xedstrate&quot;),r.a.createElement(&quot;form&quot;,{className:a.form,noValidate:!1},r.a.createElement(f.a,{container:!0,spacing:2},r.a.createElement(f.a,{item:!0,xs:12,sm:6},r.a.createElement(w.a,{onChange:function(e){p(e.target.value)},required:!0,id:&quot;firstName&quot;,label:&quot;Nombre&quot;,fullWidth:!0,name:&quot;firstName&quot;,autoFocus:!0,autoComplete:&quot;fname&quot;})),r.a.createElement(f.a,{item:!0,xs:12,sm:6},r.a.createElement(w.a,{onChange:function(e){O(e.target.value)},required:!0,fullWidth:!0,id:&quot;lastName&quot;,label:&quot;Apellido&quot;,name:&quot;lastName&quot;,autoComplete:&quot;lname&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){D(e.target.value)},required:!0,fullWidth:!0,id:&quot;email&quot;,type:&quot;email&quot;,label:&quot;Correo Electronico&quot;,name:&quot;email&quot;,autoComplete:&quot;email&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){z(e.target.value)},required:!0,fullWidth:!0,name:&quot;password&quot;,label:&quot;Contrase\xf1a&quot;,type:&quot;password&quot;,id:&quot;password&quot;,autoComplete:&quot;current-password&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(C.a,{control:r.a.createElement(S.a,{value:&quot;allowExtraEmails&quot;,color:&quot;primary&quot;}),label:&quot;Quiero recibir notificaciones de actualizaciones y productos nuevos.&quot;}))),r.a.createElement(g.a,{type:&quot;submit&quot;,fullWidth:!0,variant:&quot;contained&quot;,onClick:A,className:&quot;&quot;.concat(a.submit,&quot; portadaSaberMas&quot;)},&quot;Registrarse&quot;),r.a.createElement(f.a,{container:!0,justify:&quot;flex-end&quot;},r.a.createElement(f.a,{item:!0},r.a.createElement(k.a,{onClick:B,style:{cursor:&quot;pointer&quot;},variant:&quot;body2&quot;,className:&quot;noActionsColor&quot;},&quot;Ya tienes una cuenta? Ingresa&quot;))))))}var W=Object(p.a)((function(e){return{modal:{display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;center&quot;},paper:{outline:&quot;none&quot;,borderRadius:&quot;5px&quot;,backgroundColor:e.palette.background.paper,padding:e.spacing(2,4,3),alignItems:&quot;center&quot;,flexDirection:&quot;column&quot;,display:&quot;flex&quot;},form:{width:&quot;100%&quot;,marginTop:e.spacing(3)},submit:{margin:e.spacing(3,0,2)},logo:{maxWidth:60}}})),F=t(10),M=t.n(F);function D(){var e=P(),a=Object(n.useState)(&quot;&quot;),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(&quot;&quot;),s=Object(m.a)(i,2),u=s[0],p=s[1],h=Object(n.useState)(&quot;&quot;),v=Object(m.a)(h,2),x=v[0],O=v[1],C=function(e){function a(){return(a=Object(y.a)(j.a.mark((function e(){var a;return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,N.a.get(&quot;/api/users/login&quot;);case 2:a=e.sent,M.a.set(&quot;tokenData&quot;,a.data.Token),O(a.data.Token);case 5:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){a.apply(this,arguments)}()};return x?r.a.createElement(l.a,{to:&quot;/profile&quot;}):r.a.createElement(b.a,{component:&quot;main&quot;,maxWidth:&quot;xs&quot;},r.a.createElement(&quot;div&quot;,{className:e.paper},r.a.createElement(d.a,{to:&quot;/&quot;},r.a.createElement(&quot;img&quot;,{src:&quot;/assets/logo_small_icon_only.png&quot;,alt:&quot;logo&quot;,className:e.logo})),r.a.createElement(E.a,{component:&quot;h1&quot;,variant:&quot;h5&quot;},&quot;Inicia Sesi\xf3n&quot;),r.a.createElement(&quot;form&quot;,{className:e.form,noValidate:!1},r.a.createElement(f.a,{container:!0,spacing:2},r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){o(e.target.value)},required:!0,fullWidth:!0,autoFocus:!0,id:&quot;email&quot;,type:&quot;email&quot;,label:&quot;Correo Electronico&quot;,name:&quot;email&quot;,autoComplete:&quot;email&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){p(e.target.value)},required:!0,fullWidth:!0,name:&quot;password&quot;,label:&quot;Contrase\xf1a&quot;,type:&quot;password&quot;,id:&quot;password&quot;,autoComplete:&quot;current-password&quot;}))),r.a.createElement(g.a,{type:&quot;submit&quot;,fullWidth:!0,variant:&quot;contained&quot;,onClick:function(e){function a(){return(a=Object(y.a)(j.a.mark((function e(){var a;return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,N.a.get(&quot;/api/users/login&quot;);case 2:a=e.sent,M.a.set(&quot;tokenData&quot;,a.data.Token),O(a.data.Token);case 5:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}e.preventDefault(),N.a.post(&quot;/api/users/login&quot;,{Email:c,Password:u}),M.a.set(&quot;userData&quot;,c),function(){a.apply(this,arguments)}(),C()},className:&quot;&quot;.concat(e.submit,&quot; portadaSaberMas&quot;)},&quot;Iniciar Sesi\xf3n&quot;))))}var P=Object(p.a)((function(e){return{paper:{outline:&quot;none&quot;,borderRadius:&quot;5px&quot;,backgroundColor:e.palette.background.paper,padding:e.spacing(2,4,3),alignItems:&quot;center&quot;,flexDirection:&quot;column&quot;,display:&quot;flex&quot;},form:{width:&quot;100%&quot;,marginTop:e.spacing(3)},submit:{margin:e.spacing(3,0,2)},logo:{maxWidth:60}}})),T=t(253),R=t(249);function z(e){return r.a.createElement(R.a,Object.assign({elevation:6,variant:&quot;filled&quot;},e))}function A(e){var a=e.successMessage,t=e.handleCloseNotificationMessage,c=Object(n.useState)(!0),o=Object(m.a)(c,2),i=o[0],l=o[1],s=function(e,a){&quot;clickaway&quot;!==a&amp;&amp;(l(!1),t())};return r.a.createElement(T.a,{autoHideDuration:2500,open:i,onClose:s,anchorOrigin:{vertical:&quot;top&quot;,horizontal:&quot;center&quot;}},r.a.createElement(z,{onClose:s,severity:&quot;success&quot;},a))}function B(e){return r.a.createElement(R.a,Object.assign({elevation:6,variant:&quot;filled&quot;},e))}function q(e){var a=e.errorMessage,t=e.handleCloseNotificationMessage,c=Object(n.useState)(!0),o=Object(m.a)(c,2),i=o[0],l=o[1],s=function(e,a){&quot;clickaway&quot;!==a&amp;&amp;(l(!1),t())};return r.a.createElement(T.a,{autoHideDuration:2500,open:i,onClose:s,anchorOrigin:{vertical:&quot;top&quot;,horizontal:&quot;center&quot;}},r.a.createElement(B,{onClose:s,severity:&quot;error&quot;},a))}var G=t(250),_=t(230),U=t(182);function L(e){var a=H(),t=e.handleClose,c=e.open,o=Object(n.useState)(!1),i=Object(m.a)(o,2),l=i[0],s=i[1],u=Object(n.useState)(!1),p=Object(m.a)(u,2),d=p[0],g=p[1],f=Object(n.useState)(!1),E=Object(m.a)(f,2),b=E[0],h=E[1];return r.a.createElement(&quot;div&quot;,null,r.a.createElement(G.a,{&quot;aria-labelledby&quot;:&quot;transition-modal-title&quot;,&quot;aria-describedby&quot;:&quot;transition-modal-description&quot;,className:a.modal,onClose:t,closeAfterTransition:!0,BackdropComponent:_.a,BackdropProps:{timeout:500},open:c},r.a.createElement(U.a,{in:c},r.a.createElement(I,{handleMessageUnsuccess:function(){h(!0)},handleMessageSuccess:function(){g(!0)},handleCloseSignUp:t,handleOpenSignIn:function(){s(!0)}}))),d?r.a.createElement(A,{handleCloseNotificationMessage:function(e){g(!1)},successMessage:&quot;Usuario Registrado&quot;}):&quot;&quot;,b?r.a.createElement(q,{handleCloseNotificationMessage:function(e){h(!1)},errorMessage:&quot;Faltan Datos&quot;}):&quot;&quot;,r.a.createElement(G.a,{&quot;aria-labelledby&quot;:&quot;transition-modal-title&quot;,&quot;aria-describedby&quot;:&quot;transition-modal-description&quot;,className:a.modal,onClose:function(){s(!1)},closeAfterTransition:!0,BackdropComponent:_.a,BackdropProps:{timeout:500},open:l},r.a.createElement(U.a,{in:l},r.a.createElement(D,null))))}var H=Object(p.a)((function(e){return{modal:{display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;center&quot;}}})),Q=t(104),V=t.n(Q),Y=t(123),$=t(231);function J(e){var a=Object(n.useState)(null),t=Object(m.a)(a,2),c=t[0],o=t[1],i=e.handleSession;return r.a.createElement(&quot;div&quot;,null,r.a.createElement(g.a,null,r.a.createElement(V.a,{className:&quot;menuColorIcons&quot;,onClick:function(e){o(e.currentTarget)}})),r.a.createElement(Y.a,{id:&quot;simple-menu&quot;,anchorEl:c,keepMounted:!0,open:Boolean(c),onClose:function(){o(null)}},r.a.createElement($.a,{style:{color:&quot;rgb(33, 33, 33)&quot;},component:k.a,href:&quot;/inicio&quot;,onClick:i},&quot;Cerrar Sesi\xf3n&quot;),r.a.createElement($.a,{onClick:i},&quot;Eliminar Cuenta&quot;)))}var X=t(105),Z=t.n(X);function K(e){var a=Object(n.useState)(null),t=Object(m.a)(a,2),c=t[0],o=t[1],i=e.handleOpenModal;return r.a.createElement(&quot;div&quot;,null,r.a.createElement(g.a,null,r.a.createElement(Z.a,{className:&quot;menuColorIcons&quot;,onClick:function(e){o(e.currentTarget)}})),r.a.createElement(Y.a,{id:&quot;simple-menu&quot;,anchorEl:c,keepMounted:!0,open:Boolean(c),onClose:function(){o(null)}},r.a.createElement($.a,{onClick:i},&quot;Registrarse&quot;)))}var ee=t(15),ae=t(254),te=t(106),ne=t.n(te);function re(){var e=ce(),a=Object(n.useState)(!1),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(!1),l=Object(m.a)(i,2),s=l[0],u=l[1],p=Object(n.useState)({}),g=Object(m.a)(p,2),f=g[0],E=g[1];Object(n.useEffect)((function(){function e(){return(e=Object(y.a)(j.a.mark((function e(){var a;return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,N.a.get(&quot;/api/products&quot;);case 2:a=e.sent,E(a.data);case 4:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){e.apply(this,arguments)}(),M.a.get(&quot;userData&quot;)&amp;&amp;M.a.get(&quot;tokenData&quot;)?u(!0):u(!1)}),[]);return r.a.createElement(&quot;div&quot;,null,r.a.createElement(d.a,null,r.a.createElement(&quot;div&quot;,{className:e.search},r.a.createElement(&quot;div&quot;,{className:e.searchIcon},r.a.createElement(ne.a,{className:&quot;menuColorIcons&quot;})),r.a.createElement(ae.a,{onChange:function(e){console.log(f)},placeholder:&quot;Search\u2026&quot;,classes:{root:e.inputRoot,input:e.inputInput},inputProps:{&quot;aria-label&quot;:&quot;search&quot;}})),s?r.a.createElement(r.a.Fragment,null,r.a.createElement(J,{handleSession:function(){M.a.remove(&quot;userData&quot;),M.a.remove(&quot;tokenData&quot;)}})):r.a.createElement(r.a.Fragment,null,r.a.createElement(K,{handleOpenModal:function(){o(!0)}})),r.a.createElement(L,{handleClose:function(){o(!1)},open:c})))}var ce=Object(p.a)((function(e){return{search:Object(v.a)({position:&quot;relative&quot;,borderRadius:e.shape.borderRadius,backgroundColor:Object(ee.c)(e.palette.common.white,.15),&quot;&amp;:hover&quot;:{backgroundColor:Object(ee.c)(e.palette.common.white,.25)},marginLeft:0,width:&quot;100%&quot;},e.breakpoints.up(&quot;sm&quot;),{marginLeft:e.spacing(1),width:&quot;auto&quot;}),searchIcon:{padding:e.spacing(0,2),height:&quot;100%&quot;,position:&quot;absolute&quot;,pointerEvents:&quot;none&quot;,display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;center&quot;},inputRoot:{color:&quot;inherit&quot;},inputInput:Object(v.a)({padding:e.spacing(1,1,1,0),paddingLeft:&quot;calc(1em + &quot;.concat(e.spacing(4),&quot;px)&quot;),transition:e.transitions.create(&quot;width&quot;),width:&quot;100%&quot;},e.breakpoints.up(&quot;sm&quot;),{width:&quot;12ch&quot;,&quot;&amp;:focus&quot;:{width:&quot;20ch&quot;}})}}));function oe(){var e=ie(),a=Object(n.useState)(0),t=Object(m.a)(a,2),c=t[0],o=t[1];return Object(n.useEffect)((function(){function e(){o(window.innerWidth)}return window.addEventListener(&quot;resize&quot;,e),e(),function(){return window.removeEventListener(&quot;resize&quot;,e)}}),[c]),r.a.createElement(&quot;div&quot;,{className:&quot;portadaImage&quot;},r.a.createElement(u.a,{position:&quot;relative&quot;,className:e.root,id:&quot;portada-shadow&quot;},r.a.createElement(d.a,null,r.a.createElement(d.a,{className:e.title,component:i.b,to:&quot;/&quot;},r.a.createElement(&quot;img&quot;,{src:&quot;assets/logo.svg&quot;,alt:&quot;logo&quot;,className:&quot;&quot;.concat(e.logo,&quot; reducirLogo&quot;)})),r.a.createElement(re,null))),r.a.createElement(b.a,null,r.a.createElement(f.a,{container:!0,className:&quot;portadaCentrarResponsive &quot;.concat(e.root)},r.a.createElement(f.a,{item:!0},r.a.createElement(f.a,{container:!0,spacing:1},r.a.createElement(f.a,{justify:&quot;space-between&quot;,item:!0,xs:12},r.a.createElement(f.a,{item:!0,className:e.spaceMore},r.a.createElement(E.a,{component:&quot;div&quot;,className:e.ancho},r.a.createElement(h.a,{fontSize:&quot;h2.fontSize&quot;,className:&quot;portadaTopography&quot;},&quot;Muebles Portocarrero&quot;),c&gt;640?r.a.createElement(h.a,{fontSize:&quot;h5.fontSize&quot;,className:&quot;portadaTopography2&quot;},&quot;Somos una empresa que se dedica a la venta de muebles y accesorios de interiores&quot;):null),r.a.createElement(f.a,{container:!0,spacing:1,className:&quot;portadaCentrarResponsive&quot;},r.a.createElement(f.a,{item:!0},r.a.createElement(g.a,{className:&quot;inicioFontFamilyPortada&quot;,variant:&quot;outlined&quot;,href:&quot;/contacto&quot;},&quot;Contacto&quot;)),r.a.createElement(f.a,{item:!0},r.a.createElement(g.a,{className:&quot;portadaSaberMas&quot;,variant:&quot;outlined&quot;,href:&quot;/inicio&quot;},&quot;Quiero Saber M\xe1s&quot;))))))))))}var ie=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;,flexGrow:1,padding:e.spacing(2)},spaceMore:{padding:e.spacing(1)},title:{flexGrow:1},logo:{maxWidth:160},ancho:{maxWidth:710}}})),le=t(21),se=t(3),me=t(34),ue=t(255),pe=t(224),de=t(235),ge=t(226),fe=t(107),Ee=t.n(fe),be=t(109),he=t.n(be),ve=t(108),xe=t.n(ve),je=t(183),ye=t(233),Oe=t(234),Ne=t(110),we=t.n(Ne),Ce=t(111),Se=t.n(Ce),ke=t(113),Ie=t.n(ke),We=t(112),Fe=t.n(We);function Me(){var e,a,t=De(),c=Object(me.a)(),o=Object(n.useState)(!1),l=Object(m.a)(o,2),s=l[0],p=l[1],g=Object(n.useState)(!1),f=Object(m.a)(g,2),E=f[0],b=f[1];Object(n.useEffect)((function(){M.a.get(&quot;userData&quot;)&amp;&amp;M.a.get(&quot;tokenData&quot;)?b(!0):b(!1)}),[]);return r.a.createElement(&quot;div&quot;,null,r.a.createElement(u.a,{position:&quot;fixed&quot;,className:Object(se.a)(t.appBar,Object(v.a)({},t.appBarShift,s))},r.a.createElement(d.a,null,r.a.createElement(ge.a,{color:&quot;inherit&quot;,&quot;aria-label&quot;:&quot;open drawer&quot;,onClick:function(){p(!0)},edge:&quot;start&quot;,className:Object(se.a)(t.menuButton,Object(v.a)({},t.hide,s))},r.a.createElement(Ee.a,null)),r.a.createElement(d.a,{className:t.title,component:i.b,to:&quot;/&quot;},r.a.createElement(&quot;img&quot;,{src:&quot;/assets/logo_small_icon_only.png&quot;,alt:&quot;logo&quot;,className:t.logo})),r.a.createElement(re,null))),r.a.createElement(ue.a,{variant:&quot;permanent&quot;,className:Object(se.a)(t.drawer,(e={},Object(v.a)(e,t.drawerOpen,s),Object(v.a)(e,t.drawerClose,!s),e)),classes:{paper:Object(se.a)((a={},Object(v.a)(a,t.drawerOpen,s),Object(v.a)(a,t.drawerClose,!s),a))}},r.a.createElement(&quot;div&quot;,{className:t.toolbar},&quot;Tienda Portocarrero&quot;,r.a.createElement(ge.a,{onClick:function(){p(!1)}},&quot;rtl&quot;===c.direction?r.a.createElement(xe.a,null):r.a.createElement(he.a,null))),r.a.createElement(pe.a,null,r.a.createElement(je.a,{button:!0,component:i.b,to:&quot;/inicio&quot;},r.a.createElement(ye.a,null,r.a.createElement(we.a,null)),r.a.createElement(Oe.a,{primary:&quot;Inicio&quot;})),r.a.createElement(je.a,{button:!0,component:i.b,to:&quot;/contacto&quot;},r.a.createElement(ye.a,null,r.a.createElement(Se.a,null)),r.a.createElement(Oe.a,{primary:&quot;Contacto&quot;})),E?r.a.createElement(je.a,{button:!0,component:i.b,to:&quot;/profile&quot;},r.a.createElement(ye.a,null,r.a.createElement(Fe.a,null)),r.a.createElement(Oe.a,{primary:&quot;Perfil&quot;})):&quot;&quot;),r.a.createElement(de.a,null),r.a.createElement(pe.a,null,r.a.createElement(je.a,{button:!0,component:i.b,to:&quot;/informacion&quot;},r.a.createElement(ye.a,null,r.a.createElement(Ie.a,null)),r.a.createElement(Oe.a,{primary:&quot;Informacion&quot;})))))}var De=Object(p.a)((function(e){return{menuButton:{marginRight:e.spacing(2)},title:{padding:0,flexGrow:1},logo:{maxWidth:60},appBar:{display:&quot;flex&quot;,zIndex:e.zIndex.drawer+1,transition:e.transitions.create([&quot;width&quot;,&quot;margin&quot;],{easing:e.transitions.easing.sharp,duration:e.transitions.duration.leavingScreen})},appBarShift:{marginLeft:240,width:&quot;calc(100% - &quot;.concat(240,&quot;px)&quot;),transition:e.transitions.create([&quot;width&quot;,&quot;margin&quot;],{easing:e.transitions.easing.sharp,duration:e.transitions.duration.enteringScreen})},hide:{display:&quot;none&quot;},drawer:{width:240,flexShrink:0,whiteSpace:&quot;nowrap&quot;},drawerOpen:{width:240,transition:e.transitions.create(&quot;width&quot;,{easing:e.transitions.easing.sharp,duration:e.transitions.duration.enteringScreen})},drawerClose:Object(v.a)({transition:e.transitions.create(&quot;width&quot;,{easing:e.transitions.easing.sharp,duration:e.transitions.duration.leavingScreen}),overflowX:&quot;hidden&quot;,width:e.spacing(7)+1},e.breakpoints.up(&quot;sm&quot;),{width:e.spacing(9)+1}),toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}})),Pe=t(236),Te=t(237),Re=t(114),ze=t.n(Re);function Ae(){var e=Be(),a=&quot;/api/store-products&quot;,t=Object(n.useState)([]),c=Object(m.a)(t,2),o=c[0],i=c[1];Object(n.useEffect)((function(){function e(){return(e=Object(y.a)(j.a.mark((function e(){var t;return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,N.a.get(a);case 2:t=e.sent,i(t.data);case 4:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){e.apply(this,arguments)}()}),[]);var l=function(e){return function(a){M.a.set(&quot;categoryData&quot;,e)}};return r.a.createElement(f.a,{container:!0,justify:&quot;center&quot;},o.map((function(a){return r.a.createElement(Pe.a,{className:&quot;&quot;.concat(e.space),onClick:l(a),href:&quot;category/&quot;.concat(a.Name),button:!0,component:k.a,key:a.Name,item:!0},r.a.createElement(&quot;img&quot;,{src:a.ImagenUrl,alt:a.Name,className:&quot;&quot;.concat(e.imagenstyle,&quot; MuiGridListImg&quot;)}),r.a.createElement(Te.a,{title:a.Name,titlePosition:&quot;top&quot;,actionIcon:r.a.createElement(ge.a,{&quot;aria-label&quot;:&quot;star &quot;.concat(a.Name),className:e.icon},r.a.createElement(ze.a,null)),actionPosition:&quot;left&quot;,className:e.titleBar}))})))}var Be=Object(p.a)((function(e){return{gridList:{transform:&quot;translateZ(0)&quot;},titleBar:{background:&quot;rgb(0,0,0,0)&quot;},imagenstyle:{minWidth:268,maxWidth:window.innerWidth&gt;680?window.innerWidth/3-50:window.innerWidth-100,height:window.innerWidth&gt;680?window.innerHeight/1.13:window.innerHeight/1.4},icon:{color:&quot;white&quot;},space:{padding:e.spacing(1)}}})),qe=t(238),Ge=t(125);function _e(){var e,a=Object(n.useState)(null),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(!1),l=Object(m.a)(i,2),s=l[0],u=l[1],p=Object(n.useState)(),d=Object(m.a)(p,2),g=d[0],b=d[1],h=Le();return r.a.createElement(E.a,{variant:&quot;body2&quot;,color:&quot;textSecondary&quot;,align:&quot;center&quot;},r.a.createElement(f.a,{container:!0,spacing:1},r.a.createElement(f.a,{item:!0,xs:12},&quot;Empresa \xa9 Portocarrero Store &quot;,(new Date).getFullYear(),&quot;.&quot;),r.a.createElement(f.a,{item:!0,xs:12},&quot;Desarrollado por &quot;,r.a.createElement(k.a,{style:{color:&quot;rgb(48, 83, 79)&quot;},href:&quot;https://github.com/GerardoTBO&quot;},&quot;Gerardo Portocarrero&quot;),&quot;, apoyame en &quot;,r.a.createElement(qe.a,{open:s,style:{position:&quot;fixed&quot;,zIndex:99999999},anchorEl:c,placement:g,transition:!0},(function(e){var a=e.TransitionProps;return r.a.createElement(U.a,Object.assign({style:{backgroundColor:&quot;rgb(11, 78, 84)&quot;,color:&quot;white&quot;}},a,{timeout:350}),r.a.createElement(Ge.a,null,r.a.createElement(E.a,{className:h.typography},&quot;974 358 928&quot;),r.a.createElement(f.a,{item:!0,style:{textAlign:&quot;center&quot;}},r.a.createElement(&quot;img&quot;,{className:h.desarrollador_qr,alt:&quot;complex&quot;,src:&quot;/assets/QR_desarrollador.png&quot;}))))})),r.a.createElement(k.a,{style:{color:&quot;rgb(48, 83, 79)&quot;},onClick:(e=&quot;left&quot;,function(a){o(a.currentTarget),u((function(a){return g!==e||!a})),b(e)})},&quot;Yape&quot;))))}function Ue(){var e=Le();return r.a.createElement(&quot;footer&quot;,{className:e.footer},r.a.createElement(b.a,{maxWidth:&quot;sm&quot;},r.a.createElement(_e,null)))}var Le=Object(p.a)((function(e){return{footer:{padding:e.spacing(3,2),marginTop:&quot;auto&quot;},typography:{padding:e.spacing(2)},desarrollador_qr:{borderRadius:&quot;4px&quot;,width:&quot;120px&quot;,height:&quot;auto&quot;}}}));function He(){var e=Qe();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(Ae,null),r.a.createElement(Ue,null)))}var Qe=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;,flexGrow:1},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(0)}}})),Ve=t(116),Ye=t.n(Ve);function $e(e){var a=Je(),t=e.handleMessageSuccess,c=e.handleMessageUnsuccess,o=Object(n.useState)(&quot;&quot;),i=Object(m.a)(o,2),l=i[0],s=i[1],u=Object(n.useState)(&quot;&quot;),p=Object(m.a)(u,2),d=p[0],b=p[1],v=Object(n.useState)(&quot;&quot;),x=Object(m.a)(v,2),O=x[0],C=x[1],S=function(){var e=Object(y.a)(j.a.mark((function e(a){return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(&quot;&quot;!==l&amp;&amp;&quot;&quot;!==d){e.next=4;break}c(),e.next=8;break;case 4:return e.next=6,N.a.post(&quot;/api/users/message&quot;,{Name:l,Email:d,Message:O});case 6:t(),I();case 8:case&quot;end&quot;:return e.stop()}}),e)})));return function(a){return e.apply(this,arguments)}}();Object(n.useEffect)((function(){document.querySelector(&quot;textarea&quot;).value=M.a.get(&quot;hashProducts&quot;)}),[]);var I=function(e){Array.from(document.querySelectorAll(&quot;input&quot;)).forEach((function(e){return e.value=&quot;&quot;})),document.querySelector(&quot;textarea&quot;).value=&quot;&quot;,M.a.remove(&quot;hashProducts&quot;)};return r.a.createElement(&quot;div&quot;,{className:&quot;&quot;.concat(a.main,&quot; &quot;).concat(a.mainRaised)},r.a.createElement(f.a,{container:!0,spacing:2},r.a.createElement(f.a,{item:!0,style:{backgroundColor:&quot;rgb(11, 78, 84, .4)&quot;}},r.a.createElement(E.a,{component:&quot;div&quot;,style:{padding:&quot;12px&quot;}},r.a.createElement(h.a,{fontSize:&quot;h3.fontSize&quot;,className:&quot;contactotabTopography&quot;},&quot;Contacto&quot;),r.a.createElement(h.a,{fontSize:&quot;h6.fontSize&quot;,className:&quot;portadaTopography3&quot;,maxWidth:&quot;500px&quot;},&quot;Puedes mandar un correo electronico a la empresa directamente o comunicate por whatsapp&quot;,r.a.createElement(h.a,{style:{paddingTop:&quot;25px&quot;}},r.a.createElement(je.a,{button:!0,component:k.a,style:{boxShadow:&quot;0px 0px 2px .5px rgb(0,0,0,.1)&quot;},target:&quot;_blank&quot;,href:&quot;https://wa.me/51974358785?text=Hola%20Portocarrero_Store%20&quot;},r.a.createElement(ye.a,null,r.a.createElement(Ye.a,null)),r.a.createElement(Oe.a,{secondary:&quot;+051 974 358 928&quot;})),r.a.createElement(f.a,{item:!0,xs:!0,style:{textAlign:&quot;center&quot;,paddingTop:&quot;20px&quot;}},r.a.createElement(f.a,{item:!0},&quot; \xf3 &quot;),r.a.createElement(&quot;img&quot;,{style:{paddingTop:&quot;20px&quot;},className:a.whatsapp_qr,alt:&quot;complex&quot;,src:&quot;/assets/QR_whatsapp.png&quot;})))))),r.a.createElement(f.a,{item:!0,xs:12,sm:!0,container:!0},r.a.createElement(f.a,{item:!0,xs:!0,container:!0,direction:&quot;column&quot;,spacing:2,style:{padding:&quot;12px&quot;}},r.a.createElement(f.a,{container:!0,spacing:3,className:&quot;contactotabGrid&quot;},r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){s(e.target.value)},required:!0,id:&quot;firstName&quot;,label:&quot;Nombre completo&quot;,fullWidth:!0,name:&quot;firstName&quot;,autoFocus:!0,autoComplete:&quot;fname&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){b(e.target.value)},required:!0,fullWidth:!0,id:&quot;email&quot;,type:&quot;email&quot;,label:&quot;Correo Electronico&quot;,name:&quot;email&quot;,autoComplete:&quot;email&quot;})),r.a.createElement(f.a,{item:!0,xs:12},r.a.createElement(w.a,{onChange:function(e){C(e.target.value)},id:&quot;standard-multiline-static&quot;,fullWidth:!0,label:&quot;Mensaje&quot;,multiline:!0,rows:4}))),r.a.createElement(f.a,{item:!0},r.a.createElement(g.a,{type:&quot;submit&quot;,fullWidth:!0,variant:&quot;contained&quot;,onClick:S,className:&quot;&quot;.concat(a.submit,&quot; portadaSaberMas&quot;)},&quot;Enviar&quot;))))))}var Je=Object(p.a)((function(e){return{main:{background:&quot;#FFFFFF&quot;,position:&quot;relative&quot;,zIndex:&quot;3&quot;},mainRaised:{borderRadius:&quot;6px&quot;,boxShadow:&quot;0px 0px 5px 0px rgb(0,0,0,.1)&quot;},root:{flexGrow:1},img:{margin:&quot;auto&quot;,display:&quot;block&quot;,maxWidth:&quot;100%&quot;,maxHeight:&quot;100%&quot;},whatsapp_qr:{borderRadius:&quot;4px&quot;,width:&quot;auto&quot;,height:&quot;auto&quot;}}}));function Xe(){var e=Ze(),a=Object(n.useState)(!1),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(!1),l=Object(m.a)(i,2),s=l[0],u=l[1];return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement($e,{handleMessageSuccess:function(e){o(!0)},handleMessageUnsuccess:function(e){u(!0)}}),c?r.a.createElement(A,{handleCloseNotificationMessage:function(e){o(!1)},successMessage:&quot;Correo Enviado&quot;}):&quot;&quot;,s?r.a.createElement(q,{handleCloseNotificationMessage:function(e){u(!1)},errorMessage:&quot;Faltan Datos&quot;}):&quot;&quot;,r.a.createElement(Ue,null)))}var Ze=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}})),Ke=t(256),ea=t(242),aa=t(252);function ta(e){var a=e.handleName,t=e.handlePrice,n=e.handleAmount,c=e.handleDescription;return r.a.createElement(r.a.Fragment,null,r.a.createElement(E.a,{variant:&quot;h6&quot;,gutterBottom:!0},&quot;Ingresar Datos&quot;),r.a.createElement(&quot;form&quot;,{autoComplete:&quot;off&quot;},r.a.createElement(f.a,{container:!0,spacing:3},r.a.createElement(f.a,{item:!0,xs:12,md:6},r.a.createElement(w.a,{onChange:a,required:!0,id:&quot;cardName&quot;,label:&quot;Nombre&quot;,fullWidth:!0,autoComplete:&quot;cc-name&quot;})),r.a.createElement(f.a,{item:!0,xs:12,md:6},r.a.createElement(w.a,{onChange:t,required:!0,id:&quot;cardNumber&quot;,label:&quot;Precio en soles&quot;,fullWidth:!0})),r.a.createElement(f.a,{item:!0,xs:12,md:6},r.a.createElement(w.a,{onChange:n,required:!0,id:&quot;expDate&quot;,label:&quot;Cantidad&quot;,fullWidth:!0,autoComplete:&quot;cc-exp&quot;})),r.a.createElement(f.a,{item:!0,xs:12,md:6},r.a.createElement(w.a,{inputProps:{maxLength:80},onChange:c,required:!0,id:&quot;cvv&quot;,label:&quot;Descripci\xf3n&quot;,helperText:&quot;80 Digitos M\xe1ximo&quot;,fullWidth:!0,autoComplete:&quot;cc-csc&quot;,type:&quot;text&quot;})))))}var na=t(239),ra=t(240);function ca(e){var a=oa(),t=e.handleImg,n=e.imgP;return r.a.createElement(r.a.Fragment,null,r.a.createElement(&quot;form&quot;,{autoComplete:&quot;off&quot;},r.a.createElement(f.a,{container:!0,spacing:3},r.a.createElement(w.a,{onChange:t,autoComplete:&quot;cc-name&quot;,required:!0,id:&quot;standard-full-width&quot;,label:&quot;Inserta Imagen&quot;,helperText:&quot;Url de la imagen&quot;,fullWidth:!0,style:{margin:8}})),&quot;&quot;!==n&amp;&amp;&quot;http&quot;===n.substr(0,4)||&quot;jpg&quot;===n.substr(n.length-3,n.length)?r.a.createElement(na.a,{component:&quot;img&quot;,image:n,title:&quot;Contemplative Reptile&quot;}):r.a.createElement(&quot;div&quot;,{className:a.root},r.a.createElement(ra.a,{className:&quot;noActionsColor&quot;}))))}var oa=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;,padding:10,textAlign:&quot;center&quot;,justifyContent:&quot;center&quot;}}}));var ia=[&quot;Producto Nuevo&quot;,&quot;Escoger Producto&quot;];function la(){var e=sa(),a=Object(n.useState)(0),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(!1),u=Object(m.a)(i,2),p=u[0],d=u[1],f=Object(n.useState)(&quot;&quot;),b=Object(m.a)(f,2),h=b[0],v=b[1],x=Object(n.useState)(0),O=Object(m.a)(x,2),w=O[0],C=O[1],S=Object(n.useState)(0),k=Object(m.a)(S,2),I=k[0],W=k[1],F=Object(n.useState)(&quot;&quot;),M=Object(m.a)(F,2),D=M[0],P=M[1],T=Object(n.useState)(&quot;&quot;),R=Object(m.a)(T,2),z=R[0],A=R[1],B=function(){var e=Object(y.a)(j.a.mark((function e(){return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return o(c+1),e.next=3,N.a.post(&quot;/api/products&quot;,{Name:h,Amount:w,Price:I,Description:D,ImagenUrl:z,Available:!0});case 3:d(!0);case 4:case&quot;end&quot;:return e.stop()}}),e)})));return function(){return e.apply(this,arguments)}}();return p?r.a.createElement(l.a,{to:&quot;/inicio&quot;}):r.a.createElement(r.a.Fragment,null,r.a.createElement(s.a,null),r.a.createElement(&quot;main&quot;,{className:e.layout},r.a.createElement(Ge.a,{className:e.paper},r.a.createElement(E.a,{component:&quot;h1&quot;,variant:&quot;h4&quot;,align:&quot;center&quot;},&quot;Crear Producto&quot;),r.a.createElement(Ke.a,{activeStep:c,className:e.stepper},ia.map((function(e){return r.a.createElement(ea.a,{key:e},r.a.createElement(aa.a,null,e))}))),r.a.createElement(r.a.Fragment,null,c===ia.length?r.a.createElement(r.a.Fragment,null,r.a.createElement(E.a,{variant:&quot;h5&quot;,gutterBottom:!0},&quot;Se guardaron los cambios&quot;)):r.a.createElement(r.a.Fragment,null,function(e,a,t,n,c,o,i){switch(e){case 0:return r.a.createElement(ta,{handleName:a,handlePrice:t,handleAmount:n,handleDescription:c});case 1:return r.a.createElement(ca,{handleImg:o,imgP:i});default:throw new Error(&quot;Unknown step&quot;)}}(c,(function(e){v(e.target.value)}),(function(e){W(e.target.value)}),(function(e){C(e.target.value)}),(function(e){P(e.target.value)}),(function(e){A(e.target.value)}),z),r.a.createElement(&quot;div&quot;,{className:e.buttons},0!==c&amp;&amp;r.a.createElement(g.a,{onClick:function(){o(c-1)},className:e.button},&quot;Atras&quot;),c===ia.length-1?r.a.createElement(g.a,{variant:&quot;contained&quot;,className:&quot;portadaSaberMas&quot;,onClick:B},&quot; Guardar &quot;):r.a.createElement(g.a,{variant:&quot;contained&quot;,className:&quot;portadaSaberMas&quot;,onClick:function(){o(c+1)}},&quot; Siguiente&quot;)))))))}var sa=Object(p.a)((function(e){return{layout:Object(v.a)({width:&quot;auto&quot;,marginLeft:e.spacing(2),marginRight:e.spacing(2)},e.breakpoints.up(600+2*e.spacing(2)),{width:600,marginLeft:&quot;auto&quot;,marginRight:&quot;auto&quot;}),paper:Object(v.a)({marginTop:e.spacing(3),marginBottom:e.spacing(3),padding:e.spacing(2)},e.breakpoints.up(600+2*e.spacing(3)),{marginTop:e.spacing(6),marginBottom:e.spacing(6),padding:e.spacing(3)}),stepper:{padding:e.spacing(3,0,5)},buttons:{display:&quot;flex&quot;,justifyContent:&quot;flex-end&quot;}}}));function ma(){var e=ua(),a=Object(n.useState)(!1),t=Object(m.a)(a,2),c=t[0],o=t[1];return Object(n.useEffect)((function(){&quot;gersrpb@gmail.com&quot;===M.a.get(&quot;userData&quot;)&amp;&amp;M.a.get(&quot;tokenData&quot;)?o(!0):o(!1)}),[]),r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),c?r.a.createElement(la,null):r.a.createElement(&quot;h2&quot;,{className:&quot;effect-admin-permission-denied&quot;},&quot;No cuenta con permisos&quot;),r.a.createElement(Ue,null)))}var ua=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}}));function pa(e){var a=da(),t=Object(n.useState)({}),c=Object(m.a)(t,2),o=c[0],i=c[1];return Object(n.useEffect)((function(){function e(){return(e=Object(y.a)(j.a.mark((function e(){var a;return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,N.a.get(&quot;/api/users/profile&quot;,{params:{Email:M.a.get(&quot;userData&quot;)}});case 2:a=e.sent,i(a.data.Profile);case 4:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){e.apply(this,arguments)}()}),[]),r.a.createElement(&quot;div&quot;,{className:&quot;&quot;.concat(a.main,&quot; &quot;).concat(a.mainRaised)},r.a.createElement(f.a,{container:!0,spacing:4,className:&quot;&quot;.concat(a.root)},r.a.createElement(f.a,{item:!0,xs:!0},r.a.createElement(E.a,{component:&quot;div&quot;},r.a.createElement(h.a,{fontSize:&quot;h4.fontSize&quot;,className:&quot;profiletabTopography&quot;},o.Name),r.a.createElement(h.a,{fontSize:&quot;h4.fontSize&quot;,className:&quot;profiletabTopography&quot;},o.LastName)))))}var da=Object(p.a)({main:{position:&quot;relative&quot;,zIndex:&quot;3&quot;},mainRaised:{borderRadius:&quot;6px&quot;},root:{textAlign:&quot;center&quot;}});function ga(){var e=fa();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(pa,null),r.a.createElement(Ue,null)))}var fa=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}})),Ea=t(117),ba=t.n(Ea),ha=t(77),va=t(118),xa=t.n(va),ja=t(119),ya=t.n(ja);function Oa(){var e=Na(),a=Object(n.useState)({}),t=Object(m.a)(a,2),c=t[0],o=t[1],i={scale:.7,zoomPosition:&quot;bottom&quot;,img:&quot;&quot;.concat(c.ImagenUrl)};Object(n.useEffect)((function(){function e(){return(e=Object(y.a)(j.a.mark((function e(){return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:o(M.a.get(&quot;productData&quot;));case 1:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){e.apply(this,arguments)}()}),[]);return r.a.createElement(&quot;div&quot;,{className:e.root,style:{justifyContent:&quot;center&quot;}},r.a.createElement(Ge.a,{className:e.paper},r.a.createElement(f.a,{container:!0,spacing:2,className:&quot;producttabCenterImg&quot;},r.a.createElement(f.a,{item:!0},r.a.createElement(ha.a,{className:&quot;&quot;.concat(e.image,&quot; producttabContainerImg&quot;)},r.a.createElement(ba.a,i))),r.a.createElement(f.a,{item:!0,xs:12,sm:!0,container:!0},r.a.createElement(f.a,{item:!0,xs:!0,container:!0,direction:&quot;column&quot;,spacing:8,className:&quot;producttabCenter&quot;},r.a.createElement(f.a,{item:!0,xs:!0},r.a.createElement(E.a,{className:&quot;inicioFontFamily noActionsColor&quot;,gutterBottom:!0,variant:&quot;h4&quot;,component:&quot;h2&quot;},c.Name),r.a.createElement(E.a,{variant:&quot;body2&quot;,className:&quot;inicioFontFamily&quot;,color:&quot;textSecondary&quot;,component:&quot;p&quot;},c.Description)),r.a.createElement(f.a,{item:!0,xs:!0},r.a.createElement(&quot;img&quot;,{className:e.tarjeta,alt:&quot;complex&quot;,src:&quot;/assets/tarjeta-mastercard.svg&quot;}),r.a.createElement(&quot;img&quot;,{className:e.tarjeta,alt:&quot;complex&quot;,src:&quot;/assets/visa.svg&quot;})),r.a.createElement(f.a,{item:!0},r.a.createElement(E.a,{variant:&quot;h4&quot;,className:&quot;inicioFontFamily noActionsColor&quot;},c.Price,&quot;$&quot;)),r.a.createElement(f.a,{item:!0},r.a.createElement(g.a,{className:&quot;portadaSaberMas&quot;,onClick:function(e){M.a.get(&quot;hashProducts&quot;)?M.a.set(&quot;hashProducts&quot;,&quot;&quot;.concat(M.a.get(&quot;hashProducts&quot;),&quot; #&quot;).concat(c.Name)):M.a.set(&quot;hashProducts&quot;,&quot;Consultas por: #&quot;.concat(c.Name))},variant:&quot;outlined&quot;,href:&quot;/contacto&quot;},&quot;Consultar&quot;)),r.a.createElement(de.a,null),r.a.createElement(f.a,{item:!0},r.a.createElement(f.a,{container:!0,spacing:2,className:&quot;producttabCenterImg&quot;},r.a.createElement(f.a,{item:!0,xs:!0},r.a.createElement(xa.a,{className:&quot;menuColorIcons&quot;}),r.a.createElement(E.a,{variant:&quot;h6&quot;,className:&quot;inicioFontFamily&quot;},&quot;Despacho a domicilio&quot;)),r.a.createElement(f.a,{item:!0,xs:!0},r.a.createElement(ya.a,{className:&quot;menuColorIcons&quot;}),r.a.createElement(E.a,{variant:&quot;h6&quot;,className:&quot;inicioFontFamily&quot;},&quot;Entrega a provincias&quot;))))),r.a.createElement(f.a,{item:!0},r.a.createElement(E.a,{variant:&quot;body2&quot;,color:&quot;textSecondary&quot;},&quot;CANTIDAD: &quot;,c.Amount))))))}var Na=Object(p.a)((function(e){return{root:{flexGrow:1},paper:{padding:e.spacing(2),margin:&quot;auto&quot;,maxWidth:1300},image:{maxWidth:800,maxHeight:800},tarjeta:{marginRight:&quot;10px&quot;,width:&quot;50px&quot;,height:&quot;auto&quot;}}}));function wa(){var e=Ca();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(Oa,null),r.a.createElement(Ue,null)))}var Ca=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(1)}}})),Sa=t(120),ka=t.n(Sa),Ia=t(121),Wa=t.n(Ia),Fa=t(122),Ma=t.n(Fa);function Da(){var e=Pa();return r.a.createElement(&quot;div&quot;,{className:&quot;&quot;.concat(e.main,&quot; &quot;).concat(e.mainRaised)},r.a.createElement(f.a,{container:!0,spacing:4},r.a.createElement(f.a,{item:!0,style:{backgroundColor:&quot;rgb(11, 78, 84, .4)&quot;}},r.a.createElement(E.a,{component:&quot;div&quot;,style:{padding:&quot;12px&quot;}},r.a.createElement(h.a,{fontSize:&quot;h3.fontSize&quot;,className:&quot;contactotabTopography&quot;},&quot;Informaci\xf3n&quot;),r.a.createElement(h.a,{fontSize:&quot;h6.fontSize&quot;,className:&quot;portadaTopography3&quot;,maxWidth:&quot;500px&quot;},&quot;Puedes encontrar nuestros productos tambi\xe9n en nuestras redes sociales&quot;,r.a.createElement(je.a,{button:!0,component:k.a,target:&quot;_blank&quot;,href:&quot;#&quot;},r.a.createElement(ye.a,null,r.a.createElement(ka.a,null)),r.a.createElement(Oe.a,{secondary:&quot;#portocarrero_store&quot;})),r.a.createElement(je.a,{button:!0,component:k.a,target:&quot;_blank&quot;,href:&quot;https://www.instagram.com/portocarrero_store&quot;},r.a.createElement(ye.a,null,r.a.createElement(Wa.a,null)),r.a.createElement(Oe.a,{secondary:&quot;@portocarrero_store&quot;})),r.a.createElement(je.a,{button:!0,component:k.a,href:&quot;mailto:portocarrerostore.org@gmail.com?Subject=Consulta%20de%20un/os%20producto/s&quot;},r.a.createElement(ye.a,null,r.a.createElement(Ma.a,null)),r.a.createElement(Oe.a,{secondary:&quot;portocarrerostore.org@gmail.com&quot;}))))),r.a.createElement(f.a,{item:!0,xs:12,sm:!0,container:!0},r.a.createElement(f.a,{item:!0,xs:!0,container:!0,direction:&quot;column&quot;,spacing:2,style:{padding:&quot;12px&quot;}},r.a.createElement(&quot;iframe&quot;,{title:&quot;myFrame&quot;,src:&quot;https://maps.google.com/maps?q=Buena%20Vista%20203%2C%20Arequipa%2004012&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed&quot;,frameBorder:&quot;0&quot;,style:{border:0,width:&quot;auto&quot;,height:&quot;500px&quot;,tabindex:0},&quot;aria-hidden&quot;:&quot;false&quot;,tabIndex:&quot;0&quot;}),r.a.createElement(&quot;form&quot;,{action:&quot;https://maps.google.es/maps&quot;,method:&quot;get&quot;,target:&quot;_blank&quot;},r.a.createElement(f.a,{container:!0,spacing:2,style:{marginTop:&quot;5px&quot;}},r.a.createElement(f.a,{item:!0,xs:10,sm:3},r.a.createElement(w.a,{name:&quot;saddr&quot;,type:&quot;text&quot;,id:&quot;firstName&quot;,label:&quot;Tu Ubicacion&quot;,autoComplete:&quot;fname&quot;})),r.a.createElement(&quot;input&quot;,{name:&quot;daddr&quot;,type:&quot;hidden&quot;,value:&quot;Buena Vista 203, Arequipa 04012&quot;}),r.a.createElement(f.a,{item:!0,xs:10,sm:3},r.a.createElement(g.a,{type:&quot;submit&quot;,variant:&quot;contained&quot;,className:&quot;&quot;.concat(e.submit,&quot; portadaSaberMas&quot;)},&quot;Calcular Ruta&quot;))))))))}var Pa=Object(p.a)((function(e){return{main:{background:&quot;#FFFFFF&quot;,position:&quot;relative&quot;,zIndex:&quot;3&quot;},mainRaised:{borderRadius:&quot;6px&quot;,boxShadow:&quot;0px 0px 5px 0px rgb(0,0,0,.1)&quot;},root:{flexGrow:1},img:{margin:&quot;auto&quot;,display:&quot;block&quot;,maxWidth:&quot;100%&quot;,maxHeight:&quot;100%&quot;}}}));function Ta(){var e=Ra();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(Da,null),r.a.createElement(Ue,null)))}var Ra=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}})),za=t(243),Aa=t(244),Ba=t(246),qa=t(245);function Ga(){var e=_a(),a=Object(n.useState)([]),t=Object(m.a)(a,2),c=t[0],o=t[1],i=Object(n.useState)(!1),l=Object(m.a)(i,2),s=l[0],u=l[1],p=Object(n.useState)(!1),b=Object(m.a)(p,2),h=b[0],v=b[1],x=Object(n.useState)(!1),O=Object(m.a)(x,2),N=O[0],w=O[1],C=function(e){var a=e.target.id;document.getElementById(a).style.color=s?&quot;rgb(117, 117, 117)&quot;:&quot;rgb(248, 190, 1)&quot;,u(!s)},S=function(e){return function(a){M.a.set(&quot;productData&quot;,e)}};return Object(n.useEffect)((function(){function e(){return(e=Object(y.a)(j.a.mark((function e(){return j.a.wrap((function(e){for(;;)switch(e.prev=e.next){case 0:o(M.a.get(&quot;categoryData&quot;)),w(!0);case 2:case&quot;end&quot;:return e.stop()}}),e)})))).apply(this,arguments)}!function(){e.apply(this,arguments)}(),M.a.get(&quot;userData&quot;)&amp;&amp;M.a.get(&quot;tokenData&quot;)?v(!0):v(!1)}),[]),N?r.a.createElement(f.a,{container:!0,spacing:3,className:&quot;&quot;.concat(e.root)},c.Products.map((function(a){return r.a.createElement(f.a,{item:!0,xs:!0,key:a.Name},r.a.createElement(za.a,{className:e.size},r.a.createElement(Aa.a,null,r.a.createElement(na.a,{component:&quot;img&quot;,alt:a.Name,image:a.ImagenUrl,title:&quot;Contemplative Reptile&quot;}),r.a.createElement(qa.a,null,r.a.createElement(E.a,{className:&quot;inicioFontFamily noActionsColor&quot;,gutterBottom:!0,variant:&quot;h5&quot;,component:&quot;h2&quot;},a.Name),r.a.createElement(E.a,{variant:&quot;body2&quot;,className:&quot;inicioFontFamily&quot;,color:&quot;textSecondary&quot;,component:&quot;p&quot;},a.Description))),r.a.createElement(Ba.a,null,h?r.a.createElement(g.a,{size:&quot;small&quot;,className:e.inicioStarDisable},r.a.createElement(&quot;i&quot;,{onClick:C,id:a.Name,className:&quot;fa fa-star&quot;,style:{fontSize:&quot;24px&quot;}})):&quot;&quot;,r.a.createElement(d.a,{className:e.price},r.a.createElement(E.a,{variant:&quot;h5&quot;,className:&quot;inicioFontFamily noActionsColor&quot;},a.Price,&quot;$&quot;)),r.a.createElement(g.a,{size:&quot;small&quot;,onClick:S(a),href:&quot;&quot;.concat(c.Name,&quot;/&quot;).concat(a.Name),className:&quot;portadaSaberMas&quot;},&quot;M\xe1s informaci\xf3n&quot;))))}))):r.a.createElement(&quot;div&quot;,{className:e.loaded},r.a.createElement(ra.a,{className:&quot;noActionsColor&quot;}))}var _a=Object(p.a)({root:{flexGrow:1},size:{minWidth:268,minHeight:385},inicioStarDisable:{color:&quot;rgb(117, 117, 117)&quot;},inicioStarActive:{color:&quot;rgb(248, 190, 1)&quot;},price:{flexGrow:1},loaded:{display:&quot;flex&quot;,padding:10,textAlign:&quot;center&quot;,justifyContent:&quot;center&quot;}});function Ua(){var e=La();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(Ga,null),r.a.createElement(Ue,null)))}var La=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(1)}}}));function Ha(){var e=Qa();return r.a.createElement(&quot;div&quot;,{className:e.root},r.a.createElement(Me,null),r.a.createElement(&quot;main&quot;,{className:e.content},r.a.createElement(&quot;div&quot;,{className:e.toolbar}),r.a.createElement(E.a,{paragraph:!0},&quot;404&quot;),r.a.createElement(Ue,null)))}var Qa=Object(p.a)((function(e){return{root:{display:&quot;flex&quot;},toolbar:Object(le.a)({display:&quot;flex&quot;,alignItems:&quot;center&quot;,justifyContent:&quot;flex-end&quot;,padding:e.spacing(0,1)},e.mixins.toolbar),content:{flexGrow:1,padding:e.spacing(3)}}}));var Va=function(){return r.a.createElement(i.a,null,r.a.createElement(s.a,null),r.a.createElement(&quot;div&quot;,{className:&quot;App&quot;},r.a.createElement(l.d,null,r.a.createElement(l.b,{path:&quot;/&quot;,exact:!0,component:oe}),r.a.createElement(l.b,{path:&quot;/inicio&quot;,exact:!0,component:He}),r.a.createElement(l.b,{path:&quot;/contacto&quot;,exact:!0,component:Xe}),r.a.createElement(l.b,{path:&quot;/admin&quot;,exact:!0,component:ma}),r.a.createElement(l.b,{path:&quot;/profile&quot;,exact:!0,component:ga}),r.a.createElement(l.b,{path:&quot;/informacion&quot;,exact:!0,component:Ta}),r.a.createElement(l.b,{path:&quot;/category/:id/:id&quot;,exact:!0,component:wa}),r.a.createElement(l.b,{path:&quot;/category/:id&quot;,exact:!0,component:Ua}),r.a.createElement(l.b,{exact:!0,component:Ha}))))},Ya=Boolean(&quot;localhost&quot;===window.location.hostname||&quot;[::1]&quot;===window.location.hostname||window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));function $a(e,a){navigator.serviceWorker.register(e).then((function(e){e.onupdatefound=function(){var t=e.installing;null!=t&amp;&amp;(t.onstatechange=function(){&quot;installed&quot;===t.state&amp;&amp;(navigator.serviceWorker.controller?(console.log(&quot;New content is available and will be used when all tabs for this page are closed. See https://bit.ly/CRA-PWA.&quot;),a&amp;&amp;a.onUpdate&amp;&amp;a.onUpdate(e)):(console.log(&quot;Content is cached for offline use.&quot;),a&amp;&amp;a.onSuccess&amp;&amp;a.onSuccess(e)))})}})).catch((function(e){console.error(&quot;Error during service worker registration:&quot;,e)}))}o.a.render(r.a.createElement(r.a.StrictMode,null,r.a.createElement(Va,null)),document.getElementById(&quot;root&quot;)),function(e){if(&quot;serviceWorker&quot;in navigator){if(new URL(&quot;&quot;,window.location.href).origin!==window.location.origin)return;window.addEventListener(&quot;load&quot;,(function(){var a=&quot;&quot;.concat(&quot;&quot;,&quot;/service-worker.js&quot;);Ya?(!function(e,a){fetch(e,{headers:{&quot;Service-Worker&quot;:&quot;script&quot;}}).then((function(t){var n=t.headers.get(&quot;content-type&quot;);404===t.status||null!=n&amp;&amp;-1===n.indexOf(&quot;javascript&quot;)?navigator.serviceWorker.ready.then((function(e){e.unregister().then((function(){window.location.reload()}))})):$a(e,a)})).catch((function(){console.log(&quot;No internet connection found. App is running in offline mode.&quot;)}))}(a,e),navigator.serviceWorker.ready.then((function(){console.log(&quot;This web app is being served cache-first by a service worker. To learn more, visit https://bit.ly/CRA-PWA&quot;)}))):$a(a,e)}))}}()}},[[148,1,2]]]);
+//# sourceMappingURL=main.e7fbac87.chunk.js.map</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>admin</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://portocarrero-store.herokuapp.com/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (339 bytes)</summary>
+				
+				<pre><code>GET https://portocarrero-store.herokuapp.com/ HTTP/1.1
+Host: portocarrero-store.herokuapp.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Cookie: connect.sid=s%3AtAYxJcGoSgoJ6gsLrEVDGYhmbytDqMfB.egHvBvFpQD4vhpYJMBbW0gCln4GFJROs%2Ft77MKwBI38
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (358 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 18 Nov 2020 14:54:29 GMT
+Etag: W/&quot;8a5-175dbd98c88&quot;
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2213
+Date: Wed, 09 Nov 2022 23:33:59 GMT
+Via: 1.1 vegur
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2213 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/assets/logosmall_edited.png&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/&gt;&lt;meta name=&quot;Tinda Online&quot; content=&quot;Online Store WebSite&quot;/&gt;&lt;title&gt;Tienda Online&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(e){function t(t){for(var n,l,i=t[0],f=t[1],a=t[2],p=0,s=[];p&lt;i.length;p++)l=i[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&amp;&amp;(e[n]=f[n]);for(c&amp;&amp;c(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t&lt;u.length;t++){for(var r=u[t],n=!0,i=1;i&lt;r.length;i++){var f=r[i];0!==o[f]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(t--,1),e=l(l.s=r[0]))}return e}var n={},o={1:0},u=[];function l(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=e,l.c=n,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:&quot;Module&quot;}),Object.defineProperty(e,&quot;__esModule&quot;,{value:!0})},l.t=function(e,t){if(1&amp;t&amp;&amp;(e=l(e)),8&amp;t)return e;if(4&amp;t&amp;&amp;&quot;object&quot;==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,&quot;default&quot;,{enumerable:!0,value:e}),2&amp;t&amp;&amp;&quot;string&quot;!=typeof e)for(var n in e)l.d(r,n,function(t){return e[t]}.bind(null,n));return r},l.n=function(e){var t=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(t,&quot;a&quot;,t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=&quot;/&quot;;var i=this.webpackJsonpclient=this.webpackJsonpclient||[],f=i.push.bind(i);i.push=t,i=i.slice();for(var a=0;a&lt;i.length;a++)t(i[a]);var c=f;r()}([])&lt;/script&gt;&lt;script src=&quot;/static/js/2.307ee870.chunk.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/main.e7fbac87.chunk.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Cache-Control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>public, max-age=0</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cross-Domain Misconfiguration</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10098/">Cross-Domain Misconfiguration</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>14</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Cookie Without Secure Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10011/">Cookie Without Secure Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/614.html">614</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
